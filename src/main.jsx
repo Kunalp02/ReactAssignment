@@ -5,14 +5,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
+import App from "./App.jsx";
 import Login from './Login.jsx';
 import Dashboard from './Dashboard.jsx';
 
 const router = createBrowserRouter([
   {
     path : "/",
-    element : <div>Hello, World</div>,
+    element : <App />
   },
   {
     path : "/login",
