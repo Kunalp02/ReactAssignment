@@ -1,0 +1,64 @@
+*{
+    color: #FFFFFF;
+    background-color: #030303;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 100vh;
+    text-align: center;
+}
+
+.form-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.heading{
+    font-size: 32px;
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+input{
+    width: 450px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    border: #FFFFFF 1px solid;
+}
+
+.input[type="radio"]{
+    background-color: #FFFFFF;
+}
+
+.input[type="radio"]:checked{
+    background-color: #6741D9;
+}
+
+.login{
+    width: 460px;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: rgb(111, 59, 223);
+}
+
+.p{
+    color: rgb(215, 215, 215);
+}
+  
+ 
+
