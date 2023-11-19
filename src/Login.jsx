@@ -16,21 +16,19 @@ const Login = () => {
     }
 
 
-    const submitLogin = (e) => {
+    const submitLogin = async (e) => {
         e.preventDefault();
         console.log("submitting logn", e);
 
-        var response = axios.post('https://stg.dhunjam.in/account/admin/login', {
-            username: 'DJ@4',
-            password: 'Dhunjam@2023'
-          })
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
+        try {
+          const response = await axios.post('https://stg.dhunjam.in/account/admin/login', {
+              username: 'DJ@4',
+              password: 'Dhunjam@2023'
           });
-        console.log(response);
+          console.log(response);
+      } catch (error) {
+          console.error(error);
+      }
     }
 
 
